@@ -1,0 +1,41 @@
+//CurrencyExchange.java
+
+Import a package called java utility and invoke the scanner class to collect user input
+
+declare a public class with a variable name related to the code`s function
+declare the method of the class created above
+create an object from the class scanner to read inputs from the user through the command line
+
+prompt the user to enter the current exchange rate from dollar to RMB
+use the scanner object to read & store the input for the current exchange rate in a variable "rate" of data type Double
+
+
+if rate <= 0 or rate > 100 (Add a limit to refuse any inputs that are invalid)
+print invalid input
+
+else
+	prompt the user to enter 0 or 1 to convert from dollar to RMB or vice versa
+	use the scanner object to read & store the input of the conversion value in a variable "convert" of data type Integer
+
+	if convert = 0
+	prompt user to enter dollar amount to convert
+	use the scanner object to read & store the input for the dollar amount to convert in a variable "convertDollar" of data type Double
+	initialise a variable to collect the conversion, "rmbToDollar", assign it to 'convertDollar variable * rate' to get rmbToDollar
+
+		if convertDollar <= 0
+		print Invalid Input
+		else
+		print "$convertDollar is rmbToDollar yuan" using %f format specifier for Double values of convertDollar & rmbToDollar
+
+	else if convert = 1
+	prompt user to enter RMB amount to convert
+	use the scanner object to read & store the input for the RMB amount to convert in a variable "convertRMB" of data type Double
+	initialise a variable to collect the conversion, "dollarToRMB", assign it to 'convertRMB variable / rate' to get dollarToRMB
+
+		if convertRMB <= 0
+		print Invalid Input
+		else
+		print "convertRMB yuan is $dollarToRMB" using %f format specifier for Double values of RMB VALUE & NEW DOLLAR VALUE
+
+	else
+	print invalid input so the program only accepts 0 and 1
